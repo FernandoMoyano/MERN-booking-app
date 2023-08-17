@@ -37,6 +37,20 @@ export const bookVisit = asyncHandler(async (req, res) => {
         },
       });
     }
+    res.send("your visit is booked successfully");
+  } catch (error) {
+    throw new Error(error.message);
+  }
+});
+
+export const getAllBookings = asyncHandler(async (req, res) => {
+  const { email } = req.body;
+  try {
+    const bookings = await prisma.user.findUnique({
+      where: { email },
+      select: { bookedVisits: true },
+    });
+    res.status(200).send(bookings);
   } catch (error) {
     throw new Error(error.message);
   }
