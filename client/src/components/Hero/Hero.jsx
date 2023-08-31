@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.css";
-import {HiLocationMarker} from "react-icons/hi"
-import CountUp from "react-countup"
-import "../../index.css"
+import { HiLocationMarker } from "react-icons/hi";
+import CountUp from "react-countup";
+import "../../index.css";
 
 const Hero = () => {
   return (
@@ -12,9 +12,11 @@ const Hero = () => {
           <div className="hero-title">
             <div className="orange-circle" />
             <h1>
-              Discover<br />
+              Discover
+              <br />
               Most Suitable
-              <br />Property
+              <br />
+              Property
             </h1>
           </div>
 
@@ -24,29 +26,29 @@ const Hero = () => {
           </div>
 
           <div className="flexCenter search-bar">
-            <HiLocationMarker color="var(--blue)" size={25}/>
-            <input type="text"/>
-              <button className="button">Search</button>
+            <HiLocationMarker color="var(--blue)" size={25} />
+            <input type="text" />
+            <button className="button">Search</button>
           </div>
 
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-              <CountUp start={8800} end={9000} duration={4}/>
+                <CountUp start={8800} end={9000} duration={4} />
                 <span>+</span>
               </span>
               <span className="secondaryText">Premium Products</span>
             </div>
             <div className="flexColCenter stat">
               <span>
-              <CountUp start={1950} end={2000} duration={4}/>
+                <CountUp start={1950} end={2000} duration={4} />
                 <span>+</span>
               </span>
               <span className="secondaryText">Happy Customers</span>
             </div>
             <div className="flexColCenter stat">
               <span>
-              <CountUp start={28}/>
+                <CountUp start={28} />
                 <span>+</span>
               </span>
               <span className="secondaryText">Award Wining</span>
