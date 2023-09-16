@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Companies from "./components/companies/Companies";
@@ -15,14 +14,14 @@ function App() {
       <div>
         <div className="white-gradient" />
         <Header />
-        <Hero />
+        {/* <Hero /> */}
       </div>
-      <Companies />
+      {/* <Companies />
       <Residencies />
       <Value />
       <Contact />
       <GetStarted />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
