@@ -88,6 +88,9 @@
     gap: 1.5rem;
     font-weight: wrap;
   }
+  .hero-rigth{
+    width: 100%;
+  }
   .stat > :nth-child(1) {
     font-size: 1.5rem;
   }
