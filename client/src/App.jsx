@@ -18,8 +18,8 @@ function App() {
       </div>
       <Companies />
       <Residencies />
-      {/* <Value /> */}
-      {/* <Contact /> */}
+      <Value />
+      <Contact />
       {/* <GetStarted /> */}
       {/* <Footer /> */}
     </div>
