@@ -2,6 +2,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import "./Header.css";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -15,7 +16,9 @@ const Header = () => {
   return (
     <section className="h-wrapper">
       <div className="flexCenter innerWidth paddings h-container ">
-        <img src="../public/logo.png" alt="logo" width={100} />
+        <Link to="/">
+          <img src="../public/logo.png" alt="logo" width={100} />
+        </Link>
 
         <OutsideClickHandler
           onOutsideClick={() => {
@@ -23,12 +26,11 @@ const Header = () => {
           }}
         >
           <div className=" flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-            <a href="">Residencies</a>
-            <a href="">Our Value</a>
-            <a href="">Contact us</a>
-            <a href="">Get started</a>
+            <NavLink to="/properties">Properties</NavLink>
+            <a href="mailto:fernandomoyano21@gmail.com">Contact</a>
+
             <button className="button">
-              <a href="">Contact</a>
+              Login
             </button>
           </div>
         </OutsideClickHandler>
