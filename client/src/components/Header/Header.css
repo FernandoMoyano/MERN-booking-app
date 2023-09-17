@@ -4,11 +4,12 @@
   z-index: 99;
 }
 .h-container {
-  justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--secondary);
+  justify-content: space-between;
 }
+
 
 .h-menu {
   gap: 2rem;
@@ -25,6 +26,7 @@
   }
   .h-menu {
     z-index: 99;
+    display: flex;
     color: var(--black);
     position: absolute;
     top: 3rem;
